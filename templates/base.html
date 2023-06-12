@@ -1,0 +1,9 @@
+{% include "nav_bar.html" %}
+
+{% block title %} <h1>main page </h1>{% endblock %}
+
+{% block content %}
+<a href="{% url 'index' %}">main 이동</a>
+<a href="{% url 'advertising:my-view' %}">광고주페이지 이동</a>
+<a href="http://127.0.0.1:8000/client/">client페이지 이동</a>
+{% endblock %} 

@@ -1,0 +1,15 @@
+<h1>Client Advertising List (Client ID: {{ client_id }})</h1>
+
+{% if advertisings %}
+    <ul>
+        {% for advertising in advertisings %}
+            <li>{{ advertising }}</li>
+            <li>{{ advertising.target_age }}</li>
+            <li>{{ advertising.target_gender }}</li>
+            <br>
+        {% endfor %}
+    </ul>
+    <br>
+{% else %}
+    <p>사용자를 찾을수 없습니다.</p>
+{% endif %}
